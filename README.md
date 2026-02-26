@@ -2,6 +2,10 @@
 
 A personal portfolio website for **Swathi Mamidi** to showcase projects, skills, certificates, resume, and contact details.
 
+## Live Demo
+
+- https://swathi-portfolio-fab3cb.netlify.app
+
 ## Highlights
 
 - Responsive, modern multi-section portfolio UI
