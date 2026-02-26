@@ -49,6 +49,30 @@ node server.js
 http://localhost:3000
 ```
 
+## Deploy on GitHub Pages
+
+### Option 1: Simple (No build step)
+
+1. Push your latest code to the `main` branch.
+2. Open your repository on GitHub.
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, choose:
+	- **Source**: `Deploy from a branch`
+	- **Branch**: `main`
+	- **Folder**: `/ (root)`
+5. Click **Save**.
+
+After deployment, your site will be available at:
+
+```text
+https://swathi-hub481.github.io/portfolio/
+```
+
+### Important note for this project
+
+If your internal links start with `/` (absolute paths), they may break on GitHub Pages project URLs.
+Prefer relative links like `index.html`, `projects.html`, and `assets/...` for best compatibility.
+
 ## Author
 
 - **Swathi Mamidi**
