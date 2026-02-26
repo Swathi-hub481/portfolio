@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page Not Found - This page doesn't exist, but you can navigate back home">
+    <meta name="author" content="MAMIDI SWATHI">
+    <meta name="theme-color" content="#0f172a">
+    
+    <title>404 - Page Not Found | Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Dev</span><span class="logo-accent">.</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 404 Section -->
+        <section class="error-404">
+            <div class="container">
+                <div class="error-content">
+                    <!-- Animated 404 Text -->
+                    <div class="error-animation">
+                        <div class="error-number">
+                            <span class="digit" id="digit1">4</span>
+                            <span class="digit" id="digit2">0</span>
+                            <span class="digit" id="digit3">4</span>
+                        </div>
+                    </div>
+
+                    <!-- Error Details -->
+                    <div class="error-details">
+                        <h1 class="error-title">Page Not Found</h1>
+                        <p class="error-message">
+                            Oops! The page you're looking for seems to have gone missing. 
+                            It's not you, it's us. Don't worry, we have plenty of other pages for you to explore.
+                        </p>
+
+                        <!-- Floating Elements -->
+                        <div class="floating-shapes-404">
+                            <div class="shape-404"></div>
+                            <div class="shape-404"></div>
+                            <div class="shape-404"></div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="error-actions">
+                        <a href="index.html" class="btn btn-primary btn-lg">
+                            <i class="fas fa-home"></i> Go Home
+                        </a>
+                        <a href="projects.html" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-briefcase"></i> View Projects
+                        </a>
+                    </div>
+
+                    <!-- Navigation Options -->
+                    <div class="error-navigation">
+                        <h3>Quick Navigation</h3>
+                        <div class="nav-grid">
+                            <a href="index.html" class="nav-card">
+                                <i class="fas fa-home"></i>
+                                <span>Home</span>
+                            </a>
+                            <a href="index.html#about" class="nav-card">
+                                <i class="fas fa-user"></i>
+                                <span>About</span>
+                            </a>
+                            <a href="index.html#skills" class="nav-card">
+                                <i class="fas fa-code"></i>
+                                <span>Skills</span>
+                            </a>
+                            <a href="projects.html" class="nav-card">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Projects</span>
+                            </a>
+                            <a href="resume.html" class="nav-card">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Resume</span>
+                            </a>
+                            <a href="index.html#contact" class="nav-card">
+                                <i class="fas fa-envelope"></i>
+                                <span>Contact</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Search Suggestion -->
+                    <div class="search-suggestion">
+                        <p>Or try using the search feature:</p>
+                        <div class="search-bar-404">
+                            <input 
+                                type="text" 
+                                id="errorSearch" 
+                                class="search-input-404" 
+                                placeholder="Search for page or content..."
+                            >
+                            <button class="search-btn-404" id="searchBtn404">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Error Code -->
+                    <div class="error-code">
+                        <code>Error Code: 404 - Not Found</code>
+                        <p>The requested resource could not be found on this server.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="mailto:swathimamidi909@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAMIDI SWATHI. All rights reserved. Crafted with <i class="fas fa-heart"></i> by MAMIDI SWATHI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="floating-btn" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="notification-toast" id="notificationToast">
+        <span id="toastMessage"></span>
+        <button class="toast-close" id="toastClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

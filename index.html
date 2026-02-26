@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Developer Portfolio - Showcase of projects, skills, and experience">
+    <meta name="keywords" content="developer, portfolio, projects, skills, web development">
+    <meta name="author" content="MAMIDI SWATHI">
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Developer Portfolio">
+    <meta property="og:description" content="Professional Developer Portfolio - Showcase of projects, skills, and experience">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index.html">
+    <meta property="og:image" content="assets/og-image.png">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Developer Portfolio">
+    <meta name="twitter:description" content="Professional Developer Portfolio - Showcase of projects, skills, and experience">
+    
+    <title>Developer Portfolio - Web Developer & Designer</title>
+    
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop stop-color='%2300d4ff'/%3E%3Cstop offset='1' stop-color='%238b5cf6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect rx='14' width='64' height='64' fill='%230f172a'/%3E%3Cpath fill='url(%23g)' d='M16 17h11l8 13 8-13h11L40 47H29z'/%3E%3C/svg%3E">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-circle"></div>
+            <p class="preloader-text">Loading Portfolio <span id="preloaderPercent">0%</span></p>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SCROLL PROGRESS BAR
+         ============================================ -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- ============================================
+         NAVIGATION BAR
+         ============================================ -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <!-- Logo -->
+                <a href="/" class="logo">
+                    <span class="logo-text">Dev</span><span class="logo-accent">.</span>
+                </a>
+
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link" data-section="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="certificates.html" class="nav-link">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Right Controls -->
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         MAIN CONTENT
+         ============================================ -->
+    <main>
+        <!-- ========== HERO SECTION ========== -->
+        <section id="home" class="hero" data-section="hero">
+            <!-- Animated Background Elements -->
+            <div class="hero-bg">
+                <canvas id="heroShapesCanvas" class="hero-shapes-canvas" aria-hidden="true"></canvas>
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+                <div class="floating-shape geometric-shape shape-4" aria-hidden="true"></div>
+                <div class="floating-shape geometric-shape shape-5" aria-hidden="true"></div>
+                <div class="floating-shape geometric-shape shape-6" aria-hidden="true"></div>
+            </div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <!-- Typewriter Effect -->
+                    <div class="hero-text">
+                        <p class="hero-subtitle">Welcome to my portfolio</p>
+                        <h1 class="hero-title">
+                            <span class="typewriter" id="typewriter">Full-Stack Developer</span>
+                        </h1>
+                        <p class="hero-description">
+                            Hey! I'm Swathi Mamidi, a passionate third-year Computer Science student building elegant, efficient, and user-focused digital experiences with cutting-edge technologies. Let's create something extraordinary together.
+                        </p>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-lg">
+                            <span>View My Projects</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="resume.html" class="btn btn-secondary btn-lg">
+                            <span>Download Resume</span>
+                            <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary btn-lg">
+                            <span>Get In Touch</span>
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="hero-socials">
+                        <a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:swathimamidi909@gmail.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+
+                    <!-- Scroll Indicator -->
+                    <div class="scroll-indicator">
+                        <span>Scroll to explore</span>
+                        <div class="mouse-wheel">
+                            <div class="wheel"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== ABOUT SECTION ========== -->
+        <section id="about" class="about" data-section="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">About <span class="accent">Me</span></h2>
+                    <p class="section-subtitle">Get to know me better</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="about-content">
+                    <!-- About Text -->
+                    <div class="about-text">
+                        <p>
+                            I'm an engineering student at RGUKT IIIT Nuzvid with a passion for web development and cybersecurity. I specialize in building responsive, user-focused web applications while maintaining a strong focus on security awareness and best practices.
+                        </p>
+                        <p>
+                            My journey in web development started during my academic years, where I've worked on multiple projects ranging from campus navigation systems to e-commerce platforms. I'm dedicated to creating solutions that solve real-world problems while maintaining clean, secure code.
+                        </p>
+                        <p>
+                            When I'm not coding, you can find me exploring new technologies, learning about cybersecurity threats, and experimenting with full-stack development. I'm passionate about helping others understand and avoid digital threats like phishing and scams.
+                        </p>
+
+                        <!-- Quick Stats -->
+                        <div class="stats-grid">
+                            <div class="stat-card">
+                                <h3 class="stat-number" data-count="9">9<span>.91</span></h3>
+                                <p class="stat-label">CGPA (PUC)</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number" data-count="4">4<span></span></h3>
+                                <p class="stat-label">Projects Completed</p>
+                            </div>
+                            <div class="stat-card">
+                                <h3 class="stat-number" data-count="2027">2027</h3>
+                                <p class="stat-label">Graduation Year</p>
+                            </div>
+                        </div>
+
+                        <a href="#contact" class="btn btn-primary mt-2">
+                            Let's Work Together
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== SKILLS SECTION ========== -->
+        <section id="skills" class="skills" data-section="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Skills & <span class="accent">Expertise</span></h2>
+                    <p class="section-subtitle">Technologies and tools I work with</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Skills Categories -->
+                <div class="skills-grid">
+                    <!-- Frontend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-code"></i>
+                            Frontend
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">HTML & CSS</span>
+                                    <span class="skill-percent">95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">JavaScript</span>
+                                    <span class="skill-percent">92%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">React & Vue</span>
+                                    <span class="skill-percent">88%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">TypeScript</span>
+                                    <span class="skill-percent">85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Responsive Design</span>
+                                    <span class="skill-percent">93%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="93"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Skills -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-server"></i>
+                            Backend
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Node.js</span>
+                                    <span class="skill-percent">90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Express.js</span>
+                                    <span class="skill-percent">87%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="87"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">MongoDB</span>
+                                    <span class="skill-percent">86%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="86"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PHP & MySQL</span>
+                                    <span class="skill-percent">80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">RESTful APIs</span>
+                                    <span class="skill-percent">91%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="91"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tools & Others -->
+                    <div class="skill-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-toolbox"></i>
+                            Tools & Others
+                        </h3>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Git & GitHub</span>
+                                    <span class="skill-percent">94%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="94"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Webpack & Vite</span>
+                                    <span class="skill-percent">82%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="82"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-percent">78%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="78"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Figma & Design</span>
+                                    <span class="skill-percent">84%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="84"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">AWS & Cloud</span>
+                                    <span class="skill-percent">79%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percentage="79"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Badges -->
+                <div class="skill-badges">
+                    <h3>Quick Skills</h3>
+                    <div class="badge-container">
+                        <span class="badge">JavaScript</span>
+                        <span class="badge">React</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">CSS3</span>
+                        <span class="badge">MongoDB</span>
+                        <span class="badge">Git</span>
+                        <span class="badge">REST APIs</span>
+                        <span class="badge">Responsive Design</span>
+                        <span class="badge">Web Performance</span>
+                        <span class="badge">SEO</span>
+                        <span class="badge">UI/UX Design</span>
+                        <span class="badge">TypeScript</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== PROJECTS SECTION ========== -->
+        <section id="projects" class="projects" data-section="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+                    <p class="section-subtitle">A selection of my recent work and achievements</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Project Filter -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="web">Web Apps</button>
+                    <button class="filter-btn" data-filter="design">Design</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <!-- Projects Grid -->
+                <div class="projects-grid">
+                    <!-- Project Card 1: Campus Navigation -->
+                    <article class="project-card" data-category="web fullstack">
+                        <div class="project-image">
+                            <img src="assets/navigation.webp" alt="RGUKT IIIT Nuzvid Campus Navigation System" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-map-location-dot"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">RGUKT IIIT Nuzvid Campus Navigation System</h3>
+                            <p class="project-description">
+                                A web-based campus navigation system that helps students locate departments and facilities efficiently using interactive UI design.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button onclick="alert('Coming Soon! The live demo will be uploaded shortly.');" class="btn btn-sm btn-primary">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 2: YBT Digital -->
+                    <article class="project-card" data-category="design web fullstack">
+                        <div class="project-image">
+                            <img src="assets/ybt.jpg" alt="YBT Digital Commercial Project" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-store"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">YBT Digital Commercial Project</h3>
+                            <p class="project-description">
+                                A professional digital commercial website developed to promote business services with modern UI, responsive layout, and performance optimization.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <button onclick="alert('Coming Soon! The live demo will be uploaded shortly.');" class="btn btn-sm btn-primary">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 3: Fresh Milk -->
+                    <article class="project-card" data-category="fullstack web">
+                        <div class="project-image">
+                            <img src="assets/milk.webp" alt="Fresh Milk Delivery Website" class="project-img">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-bottle-water"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Fresh Milk Delivery Website</h3>
+                            <p class="project-description">
+                                A responsive dairy product delivery website designed for seamless ordering experience with clean UI and optimized layout.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://nagendrafreshmilk.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 4: Risk Awareness -->
+                    <article class="project-card" data-category="design fullstack">
+                        <div class="project-image">
+                            <img src="assets/phishing.jpg" alt="Risk Awareness & Phishing Prevention System">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-overlay" data-project="4">
+                                    <i class="fas fa-expand"></i> View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Risk Awareness & Phishing Prevention System</h3>
+                            <p class="project-description">
+                                Browser-based educational platform designed to help users identify and avoid phishing scams, malware, and other cyber threats.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">Cybersecurity</span>
+                            </div>
+                            <div class="project-links">
+                                <button onclick="alert('Coming Soon! The live demo will be uploaded shortly.');" class="btn btn-sm btn-primary">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 5 -->
+                    <article class="project-card" data-category="web design">
+                        <div class="project-image">
+                            <img src="assets/port.png" alt="Personal Portfolio Website">
+                            <div class="project-overlay">
+                                <div class="overlay-content">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-description">
+                                A responsive developer portfolio showcasing skills, projects, resume, and smooth animations built using modern frontend practices.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Responsive</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://lnkd.in/dVDQmZGN" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">
+                                    View Project <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project Card 6 -->
+                    <article class="project-card" data-category="fullstack">
+                        <div class="project-image">
+                            <img src="assets/blog.jpeg" alt="Blog Platform">
+                            <div class="project-overlay">
+                                <a href="#" class="btn-overlay" data-project="6">
+                                    <i class="fas fa-expand"></i> View Details
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Blog Platform</h3>
+                            <p class="project-description">
+                                Full-featured blogging platform with markdown support, user authentication, and comments.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-badge">Express.js</span>
+                                <span class="tech-badge">MongoDB</span>
+                                <span class="tech-badge">JWT Auth</span>
+                                <span class="tech-badge">Markdown</span>
+                            </div>
+                            <div class="project-links">
+                                <button onclick="alert('Coming Soon! The live demo will be uploaded shortly.');" class="btn btn-sm btn-primary">
+                                    Live Demo <i class="fas fa-external-link-alt"></i>
+                                </button>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-secondary">
+                                    GitHub <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- View All Projects Link -->
+                <div class="projects-footer">
+                    <a href="projects.html" class="btn btn-primary btn-lg">
+                        View All Projects <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== EXPERIENCE SECTION ========== -->
+        <section id="experience" class="experience" data-section="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experience & <span class="accent">Timeline</span></h2>
+                    <p class="section-subtitle">My professional journey and milestones</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Vertical Timeline -->
+                <!-- <div class="timeline">
+                      Timeline Item 1: Engineering  
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">B.Tech in Computer Science Engineering</h3>
+                                <span class="timeline-date">2023 - 2027</span>
+                            </div>
+                            <p class="timeline-company">RGUKT IIIT Nuzvid</p>
+                            <p class="timeline-description">
+                                Currently pursuing Bachelor of Technology in Computer Science & Engineering. Focused on web development, full-stack applications, and cybersecurity. Active in academic projects and technical workshops.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">Web Development</span>
+                                <span class="skill-tag">Full Stack</span>
+                                <span class="skill-tag">Cybersecurity</span>
+                                <span class="skill-tag">DBMS</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- Timeline Item 2: Pre-University
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">Pre-University Course (PUC)</h3>
+                                <span class="timeline-date">2021 - 2023</span>
+                            </div>
+                            <p class="timeline-company">RGUKT IIIT Nuzvid</p>
+                            <p class="timeline-description">
+                                Completed 2-year Pre-University Course with excellent academic performance (CGPA: 9.91). <br>Built strong foundation in Mathematics, Physics.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">CGPA 9.91</span>
+                                <span class="skill-tag">Mathematics</span>
+                                <span class="skill-tag">Physics</span>
+                                <span class="skill-tag">CS Fundamentals</span>
+                            </div>
+                        </div>
+                    </div>  -->
+
+                    <!-- Timeline Item 3: Secondary Education -->
+                    <!-- <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3 class="timeline-title">10th Grade</h3>
+                                <span class="timeline-date">Completed</span>
+                            </div>
+                            <p class="timeline-company">Amaravati English Medium School, Narsipatnam</p>
+                            <p class="timeline-description">
+                                Completed 10th grade with distinction (CGPA: 10.0). Developed strong academic foundation and interest in technology and problem-solving.
+                            </p>
+                            <div class="timeline-skills">
+                                <span class="skill-tag">CGPA 10.0</span>
+                                <span class="skill-tag">Science</span>
+                                <span class="skill-tag">Mathematics</span>
+                                <span class="skill-tag">English</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+
+        <!-- ========== TESTIMONIALS SECTION ========== -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Client <span class="accent">Testimonials</span></h2>
+                    <p class="section-subtitle">What clients say about working with me</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Testimonials Carousel -->
+                <div class="testimonials-wrapper">
+                    <div class="testimonials-container" id="testimonialContainer">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60x60?text=Client+1" alt="Client">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">John Smith</h4>
+                                    <p class="testimonial-role">CEO, Tech Startup</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Working with this developer has been an absolute game-changer for our company. They delivered the project on time and exceeded all expectations. Highly recommended!"
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60x60?text=Client+2" alt="Client">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">Sarah Johnson</h4>
+                                    <p class="testimonial-role">Product Manager, Design Co.</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Exceptional attention to detail and professional approach. They understood our vision and brought it to life perfectly. Best decision we made!"
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60x60?text=Client+3" alt="Client">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">Michael Chen</h4>
+                                    <p class="testimonial-role">Founder, E-Commerce Store</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "The quality of code and attention to performance optimization is impressive. Our website now loads 60% faster. Truly professional!"
+                            </p>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="testimonial-card">
+                            <div class="testimonial-header">
+                                <div class="testimonial-avatar">
+                                    <img src="https://via.placeholder.com/60x60?text=Client+4" alt="Client">
+                                </div>
+                                <div class="testimonial-info">
+                                    <h4 class="testimonial-name">Emily Rodriguez</h4>
+                                    <p class="testimonial-role">Marketing Director, Agency</p>
+                                </div>
+                            </div>
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">
+                                "Communication was clear, delivery was flawless, and the final product exceeded our expectations. Would definitely work together again!"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Carousel Controls -->
+                    <div class="carousel-controls">
+                        <button class="carousel-btn prev" id="prevBtn" aria-label="Previous testimonial">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-dots" id="carouselDots"></div>
+                        <button class="carousel-btn next" id="nextBtn" aria-label="Next testimonial">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== RESUME SECTION ========== -->
+        <section id="resume" class="resume" data-section="resume">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">My <span class="accent">Resume</span></h2>
+                    <p class="section-subtitle">Download my complete CV and professional profile</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="resume-wrapper">
+                    <div class="resume-content full-width">
+                        <div class="resume-summary">
+                            <h3>Professional Summary</h3>
+                            <p>
+                                Engineering student at RGUKT IIIT Nuzvid with a strong foundation in web development, full-stack technologies, and cybersecurity. 
+                                Passionate about building responsive web applications and solving complex problems. Experienced in HTML5, CSS3, JavaScript, PHP, 
+                                and modern frameworks. Committed to continuous learning and staying updated with industry trends.
+                            </p>
+                        </div>
+                        <div class="resume-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Education</h4>
+                                    <p>B.Tech in Information Technology (2023-2027) from RGUKT IIIT Nuzvid with strong CGPA performance</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Technical Skills</h4>
+                                    <p>HTML5, CSS3, JavaScript, PHP, MySQL, Bootstrap, and responsive design principles</p>
+                                </div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="highlight-text">
+                                    <h4>Project Experience</h4>
+                                    <p>4+ completed projects in e-commerce, navigation systems, and digital platforms</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="assets/resumec.jpeg" download="MAMIDI_SWATHI_Resume.jpeg" class="btn btn-primary btn-lg">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== CONTACT SECTION ========== -->
+        <section id="contact" class="contact" data-section="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
+                    <p class="section-subtitle">Let's discuss your next project</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Nuzvid, Andhra Pradesh, India</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>
+                                    <a href="mailto:swathimamidi909@gmail.com">swathimamidi909@gmail.com</a>
+                                </p>
+                                <button class="copy-email" data-email="swathimamidi909@gmail.com" title="Copy email">
+                                    <i class="fas fa-copy"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p><a href="tel:+917793964909">+91 7793964909</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Available For</h4>
+                                <p>Internships, Freelance, Full-time</p>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="contact-socials">
+                            <a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer" class="social-btn" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer" class="social-btn" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://leetcode.com/u/SWATHIMAMIDI/" target="_blank" rel="noopener noreferrer" class="social-btn" title="LeetCode">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="mailto:swathimamidi909@gmail.com" class="social-btn" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="formName">Full Name *</label>
+                            <input type="text" id="formName" name="name" placeholder="John Doe" required>
+                            <span class="error-message" data-field="name"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formEmail">Email Address *</label>
+                            <input type="email" id="formEmail" name="email" placeholder="your@email.com" required>
+                            <span class="error-message" data-field="email"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formSubject">Subject *</label>
+                            <input type="text" id="formSubject" name="subject" placeholder="Project Inquiry" required>
+                            <span class="error-message" data-field="subject"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="formMessage">Message *</label>
+                            <textarea id="formMessage" name="message" placeholder="Tell me about your project..." rows="5" required></textarea>
+                            <span class="error-message" data-field="message"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg form-submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-notice">I'll get back to you as soon as possible!</p>
+                    </form>
+
+                    <div class="contact-map reveal-on-scroll">
+                        <iframe
+                            title="Nuzvid, Andhra Pradesh"
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=Nuzvid,Andhra%20Pradesh&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============================================
+         FOOTER
+         ============================================ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://leetcode.com/u/SWATHIMAMIDI/" target="_blank" rel="noopener noreferrer">LeetCode</a></li>
+                        <li><a href="mailto:swathimamidi909@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates and insights</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAMIDI SWATHI. All rights reserved. Crafted with <i class="fas fa-heart"></i> by MAMIDI SWATHI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         FLOATING ACTION BUTTON (BACK TO TOP)
+         ============================================ -->
+    <button class="floating-btn" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ============================================
+         NOTIFICATION TOAST
+         ============================================ -->
+    <div class="notification-toast" id="notificationToast">
+        <span id="toastMessage"></span>
+        <button class="toast-close" id="toastClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

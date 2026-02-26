@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Resume - Download my CV and view my qualifications">
+    <meta name="keywords" content="resume, cv, qualifications, experience, education">
+    <meta name="author" content="MAMIDI SWATHI">
+    <meta name="theme-color" content="#0f172a">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Resume - Developer Portfolio">
+    <meta property="og:description" content="Professional Resume - Download my CV and view my qualifications">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="resume.html">
+    
+    <title>Resume - Developer Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-circle"></div>
+            <p class="preloader-text">Loading Resume</p>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Dev</span><span class="logo-accent">.</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="projects.html" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link active">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="index.html#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Resume Header -->
+        <section class="resume-header">
+            <div class="container">
+                <div class="header-content">
+                    <h1>My Resume</h1>
+                    <p>Professional qualifications, skills, and achievements</p>
+                    <div class="header-actions">
+                        <a href="assets/resumec.jpeg" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
+                            <i class="fas fa-eye"></i> View Resume
+                        </a>
+                        <a href="#" class="btn btn-primary btn-lg" id="downloadResume">
+                            <i class="fas fa-download"></i> Download PDF
+                        </a>
+                        <a href="index.html#contact" class="btn btn-secondary btn-lg">
+                            <i class="fas fa-envelope"></i> Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Preview Section -->
+        <section class="resume-content">
+            <div class="container">
+                <div class="resume-layout">
+                    <!-- Main Resume Column -->
+                    <div class="resume-main">
+                        <!-- Summary -->
+                        <section class="resume-section">
+                            <h2 class="section-title">
+                                <i class="fas fa-user"></i> Professional Summary
+                            </h2>
+                            <div class="section-content">
+                                <p>
+                                    Third-year Computer Science student with hands-on experience through internship at SmartED Innovations startup. Proficient in full-stack web development with expertise in modern JavaScript frameworks, backend development, and web technologies. Certified in Full Stack Web Development. Passionate about building practical solutions and learning industry best practices.
+                                </p>
+                            </div>
+                        </section>
+
+                        <!-- Experience -->
+                        <section class="resume-section">
+                            <h2 class="section-title">
+                                <i class="fas fa-briefcase"></i> Professional Experience
+                            </h2>
+                            <div class="experience-item">
+                                <div class="experience-header">
+                                    <h3>Intern - Full Stack Developer</h3>
+                                    <span class="date">Internship</span>
+                                </div>
+                                <p class="company">SmartED Innovations | Startup</p>
+                                <ul class="experience-list">
+                                    <li>Built full-stack web projects and applications from scratch</li>
+                                    <li>Worked with modern JavaScript frameworks and backend technologies</li>
+                                    <li>Gained hands-on experience in real-world startup environment</li>
+                                    <li>Contributed to multiple project development and deployment</li>
+                                    <li>Earned Full Stack Web Development Certification</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- Education -->
+                        <section class="resume-section education-section">
+                            <h2 class="section-title">
+                                <i class="fas fa-graduation-cap"></i> Education
+                            </h2>
+
+                            <div class="education-item">
+                                <div class="education-header">
+                                    <h3>B.Tech in Computer Science</h3>
+                                    <span class="date">2023 - 2027</span>
+                                </div>
+                                <p class="school">RGUKT IIIT Nuzvid</p>
+                                <div class="badges-container">
+                                    <span class="badge cgpa-badge">CGPA: 9.01</span>
+                                </div>
+                                <p class="description">
+                                    Focus on software engineering, algorithms, and web development. Currently in third year, building expertise in full-stack development, data structures, and modern technologies. Passionate about practical learning and industry applications.
+                                </p>
+                                <div class="skill-tags">
+                                    <span class="tag">Software Engineering</span>
+                                    <span class="tag">Algorithms</span>
+                                    <span class="tag">Web Development</span>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-header">
+                                    <h3>Pre-University Course (PUC)</h3>
+                                    <span class="date">2021 - 2023</span>
+                                </div>
+                                <p class="school">RGUKT IIIT Nuzvid</p>
+                                <div class="badges-container">
+                                    <span class="badge cgpa-badge">CGPA: 9.91</span>
+                                </div>
+                                <p class="description">
+                                    Completed 2-year Pre-University Course with excellent academic performance. Built strong foundation in Mathematics, Physics, and Computer Science.
+                                </p>
+                                <div class="skill-tags">
+                                    <span class="tag">Mathematics</span>
+                                    <span class="tag">Physics</span>
+                                    <span class="tag">CS Fundamentals</span>
+                                </div>
+                            </div>
+
+                            <div class="education-item">
+                                <div class="education-header">
+                                    <h3>10th Standard</h3>
+                                    <span class="date">Up to 2021</span>
+                                </div>
+                                <p class="school">Secondary Education</p>
+                                <div class="badges-container">
+                                    <span class="badge cgpa-badge">CGPA: 10</span>
+                                </div>
+                                <p class="description">
+                                    Completed secondary education with strong fundamentals in science, mathematics, and language subjects. Developed critical thinking and problem-solving skills essential for higher studies.
+                                </p>
+                                <div class="skill-tags">
+                                    <span class="tag">Science</span>
+                                    <span class="tag">Mathematics</span>
+                                    <span class="tag">English</span>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="resume-sidebar">
+                        <!-- Skills Summary -->
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-title">
+                                <i class="fas fa-code"></i> Top Skills
+                            </h3>
+                            <div class="skills-summary">
+                                <div class="skill-group">
+                                    <h4>Frontend</h4>
+                                    <div class="skill-tags">
+                                        <span class="tag">React</span>
+                                        <span class="tag">Vue.js</span>
+                                        <span class="tag">TypeScript</span>
+                                        <span class="tag">CSS3</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <h4>Backend</h4>
+                                    <div class="skill-tags">
+                                        <span class="tag">Node.js</span>
+                                        <span class="tag">Express</span>
+                                        <span class="tag">MongoDB</span>
+                                        <span class="tag">PostgreSQL</span>
+                                    </div>
+                                </div>
+                                <div class="skill-group">
+                                    <h4>Tools & Platforms</h4>
+                                    <div class="skill-tags">
+                                        <span class="tag">Git</span>
+                                        <span class="tag">Docker</span>
+                                        <span class="tag">AWS</span>
+                                        <span class="tag">CI/CD</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Certifications -->
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-title">
+                                <i class="fas fa-certificate"></i> Certifications
+                            </h3>
+                            <div class="certifications-list">
+                                <div class="certification-item">
+                                    <h4>SmartED Innovations Certified Developer</h4>
+                                    <p class="cert-issuer">SmartED Innovations</p>
+                                    <p class="cert-meta">3 Certificates Earned</p>
+                                    <a href="certificates.html" class="btn btn-sm btn-primary" style="margin-top: 10px; display: inline-block;">
+                                        <i class="fas fa-eye"></i> View Certificates
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Languages -->
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-title">
+                                <i class="fas fa-language"></i> Languages
+                            </h3>
+                            <div class="languages-list">
+                                <div class="language-item">
+                                    <span>English</span>
+                                    <span class="badge">Fluent</span>
+                                </div>
+                                <div class="language-item">
+                                    <span>Telugu</span>
+                                    <span class="badge">Native</span>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- Links -->
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-title">
+                                <i class="fas fa-link"></i> Links
+                            </h3>
+                            <div class="links-list">
+                                <a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer" class="link-item">
+                                    <i class="fab fa-github"></i> GitHub Profile
+                                </a>
+                                <a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3/" target="_blank" rel="noopener noreferrer" class="link-item">
+                                    <i class="fab fa-linkedin"></i> LinkedIn Profile
+                                </a>
+                                <a href="https://leetcode.com/u/SWATHIMAMIDI/" target="_blank" rel="noopener noreferrer" class="link-item">
+                                    <i class="fas fa-code"></i> LeetCode Profile
+                                </a>
+                            </div>
+                        </section>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Key <span class="accent">Achievements</span></h2>
+                    <p class="section-subtitle">Notable accomplishments throughout my career</p>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>CSE Seat with 121 Rank</h3>
+                        <p>Secured a Computer Science Engineering seat with an impressive rank of 121 in entrance examination</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3>Multiple Certifications</h3>
+                        <p>Completed certifications in AI, Cloud Computing, and Quantum Technologies from SmartED Innovations, NextWave, and NPTEL courses</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Advanced Level Projects</h3>
+                        <p>Built comprehensive projects from basic to advanced level, demonstrating strong technical skills and project management capabilities</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-megaphone"></i>
+                        </div>
+                        <h3>Marketing Volunteer</h3>
+                        <p>Actively contributed as a marketing volunteer for SDCAC and SM Organizations, promoting awareness and engagement</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Social Services & Outreach</h3>
+                        <p>Participated in social services through NSS, Hamari Pehchan, and Helping Hands Organization, contributing to community welfare</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Breakdown -->
+        <section class="skills-breakdown">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical <span class="accent">Proficiency</span></h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <div class="skills-breakdown-grid">
+                    <div class="skill-category-full">
+                        <h3>Programming Languages</h3>
+                        <div class="skills-flex">
+                            <div class="skill-bar-item">
+                                <span>JavaScript/TypeScript</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="proficiency-text">95%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>HTML/CSS</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 98%"></div>
+                                </div>
+                                <span class="proficiency-text">98%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>Python</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="proficiency-text">80%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>SQL</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="proficiency-text">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-full">
+                        <h3>Frameworks & Libraries</h3>
+                        <div class="skills-flex">
+                            <div class="skill-bar-item">
+                                <span>React.js</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 92%"></div>
+                                </div>
+                                <span class="proficiency-text">92%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>Vue.js</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 88%"></div>
+                                </div>
+                                <span class="proficiency-text">88%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>Node.js/Express</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 90%"></div>
+                                </div>
+                                <span class="proficiency-text">90%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>Next.js</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="proficiency-text">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category-full">
+                        <h3>Tools & Technologies</h3>
+                        <div class="skills-flex">
+                            <div class="skill-bar-item">
+                                <span>Git/GitHub</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 94%"></div>
+                                </div>
+                                <span class="proficiency-text">94%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>Docker</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 82%"></div>
+                                </div>
+                                <span class="proficiency-text">82%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>AWS/Cloud</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="proficiency-text">80%</span>
+                            </div>
+                            <div class="skill-bar-item">
+                                <span>CI/CD Pipeline</span>
+                                <div class="proficiency-bar">
+                                    <div class="proficiency-fill" style="width: 87%"></div>
+                                </div>
+                                <span class="proficiency-text">87%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="mailto:swathimamidi909@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAMIDI SWATHI. All rights reserved. Crafted with <i class="fas fa-heart"></i> by MAMIDI SWATHI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="floating-btn" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div class="notification-toast" id="notificationToast">
+        <span id="toastMessage"></span>
+        <button class="toast-close" id="toastClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

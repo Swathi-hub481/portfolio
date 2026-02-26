@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Complete Portfolio Projects - View all web development and design projects">
+    <meta name="keywords" content="projects, portfolio, web development, design, case studies">
+    <meta name="author" content="MAMIDI SWATHI">
+    <meta name="theme-color" content="#0f172a">
+    
+    <title>Projects - Developer Portfolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="preloader-content">
+            <div class="preloader-circle"></div>
+            <p class="preloader-text">Loading Projects</p>
+            <div class="preloader-progress">
+                <div class="preloader-progress-bar" id="progressBar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-text">Dev</span><span class="logo-accent">.</span>
+                </a>
+
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="index.html#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li class="nav-item"><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="burger-menu" id="burgerMenu" aria-label="Toggle menu">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="projects-header">
+            <div class="container">
+                <div class="header-content">
+                    <h1>My Projects</h1>
+                    <p>Explore my latest work and creative endeavors</p>
+                    <div class="header-underline"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-controls-section">
+            <div class="container">
+                <div class="projects-controls">
+                    <div class="search-box">
+                        <input type="text" id="projectSearch" placeholder="Search projects..." class="search-input">
+                        <button id="searchClear" class="search-clear">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="search-autocomplete" id="projectAutocomplete"></div>
+                    </div>
+
+                    <div class="filter-sort">
+                        <select id="categoryFilter" class="filter-dropdown">
+                            <option value="">All Categories</option>
+                            <option value="web">Web</option>
+                            <option value="fullstack">Full Stack</option>
+                            <option value="design">Design</option>
+                            <option value="frontend">Frontend</option>
+                            <option value="backend">Backend</option>
+                        </select>
+
+                        <select id="sortOptions" class="sort-dropdown">
+                            <option value="newest">Newest First</option>
+                            <option value="oldest">Oldest First</option>
+                            <option value="name-asc">Name A-Z</option>
+                            <option value="name-desc">Name Z-A</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-section">
+            <div class="container">
+                <div id="projectsGrid" class="projects-grid"></div>
+                <div id="noResults" class="no-results">
+                    <i class="fas fa-search"></i>
+                    <h3>No Projects Found</h3>
+                    <p>Try adjusting your search or filters</p>
+                </div>
+                <div id="pagination" class="pagination"></div>
+            </div>
+        </section>
+
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Connect</h5>
+                    <ul>
+                        <li><a href="https://github.com/Swathi-hub481" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/swathi-mamidi-7751a12b3" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="mailto:swathimamidi909@gmail.com">Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Articles</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section footer-newsletter">
+                    <h5>Newsletter</h5>
+                    <p>Subscribe for updates and insights</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 MAMIDI SWATHI. All rights reserved. Crafted with <i class="fas fa-heart"></i> by MAMIDI SWATHI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="floating-btn" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <div class="notification-toast" id="notificationToast">
+        <span id="toastMessage"></span>
+        <button class="toast-close" id="toastClose">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
